@@ -55,6 +55,7 @@ Jekyll非常棒，可惜它基于Ruby。对于Python爱好者而言，基于Pyth
 * * *
 开始动手。
 ###Github入门指南
+There are two types of GitHub Pages: Project Pages and User Pages. GitHub Pages 提供一种简洁高效的发布Pelican页面的方法。两者都支持Pelican页面发布。
 请参考<http://blog.csdn.net/duxinfeng2010/article/details/8654690>
 
 ###使用Github Pages创建个人博客
@@ -101,13 +102,13 @@ Github为每一个用户分配了一个二级域名username.github.io，用户�
 
 写完后，执行以下命令，即可在本机<http://127.0.0.1:8000>看到效果。
 
-    make publish
+    make html
     make serve
 
 若要一键上传到Github，需要修改Makefile两处地方：
     
     publish:
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
     
     github: publish
 	cd OUTPUTDIR ; git add . ;  git commit -am 'your comments' ; git push
@@ -119,7 +120,7 @@ Github为每一个用户分配了一个二级域名username.github.io，用户�
 我们已经能成功地用markdown写出博文并部署到github了，但这远远不够。
 
 ###管理图片
-我觉得使用云相册比本地图片要方便的多，我使用[Picasa](https://picasaweb.google.com?noredirect=1)来维护blog的所有图片。
+我觉得使用云相册比本地图片要方便的多，我使用[Picasa](https://picasaweb.google.com?noredirect=1)来维护blog的所有图片。[网易云相册](http://photo.163.com/)也是一个不错的选择。
 
 ###挑选主题
 安装主题，比如bootstrap2：
@@ -196,7 +197,11 @@ Source Code : <https://github.com/lizherui/lizherui.github.io>
 
 Have fun!
 
+###修改 makefile
+熟悉几个参数：
 
-
-
-
+* make html 这个是生成你的静态博客站点，你可以在本地预览你的静态博客。它使用 pelicanconf.py 配置文件来生成站点。
+* make publish 这个是生成准备发布的静态博客站点，会加入你网站的 URL。它使用 publishconf.py 配置文件来生成站点。
+* make serve 建立一个开发服务器提供本地的预览，在windows环境使用 Python3X 的，要注意makefile文件开头的 PY?=python3 的设置，将它改过来：PY?=python 否则会报错。因为windows环境没有 python3 这个命令。
+* [ghp-import](https://github.com/davisp/ghp-import) 工具：使用 pip 安装。Pelican默认使用这个工具，它可以帮助你简化更新 GitHub Page。
+* make regenerate 它可以自动实时更新你的文章输出。使用时，它在后台监控你的 input 文件夹，你修改完并文章保存后，它自动重新生成你的博客到输出目录。这样你就不需要每次改完文章后再去手动输入命令生成。
