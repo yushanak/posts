@@ -3,14 +3,14 @@ Date: 2014-03-07 22:30
 Modified: 2014-03-08 22:30
 Category: Database
 Tags: postgresql
-Slug: postgresql-9.3.3-1-windows
+Slug: postgresql-windows
 Authors: Shan
-Summary: **软件说明：**postgresql-9.3.3-1-windows-binaries 自解压版本，没有选择 exe 安装版本；操作系统 win7 64位，postgis-pg93-setup-2.1.exe；
-
-
-**软件说明：**postgresql-9.3.3-1-windows-binaries 自解压版本，没有选择 exe 安装版本；操作系统 win7 64位，postgis-pg93-setup-2.1.exe；
+ 
+**软件说明：** postgresql-9.3.3-1-windows-binaries 自解压版本，没有选择 exe 安装版本；操作系统 win7 64位，postgis-pg93-setup-2.1.exe；
 
 ----
+
+1. 下载 postgresql-9.3.3-1-windows-binaries 自解压版本
   
 2. 首先解压postgresql：解压到你想要的安装目录，主要最好不要有中文或者空格，我的目录是
 
