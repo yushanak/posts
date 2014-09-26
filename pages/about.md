@@ -2,7 +2,7 @@ Title: About
 Slug: about
 ***
 
-Hi，我是来自广州的蛮子C，这是我的博客。
+Hi，我是来自广州的 YushanAK，这是我的博客。
 
 我崇尚 Geek 精神，喜欢一切简洁、优雅、强健的东西，计算机技术是我业余爱好的最大项目。喜欢 Mac OS X、Sublime-Text、Git、GCC、Gdb，喜欢快捷键，喜欢 Python/Golang，喜欢Github、Quora、Stackoverflow。
 

@@ -1,4 +1,4 @@
-Title: 我的博客正式在 GitHub 安家
+Title: 博客正式在 GitHub 安家
 Category:Tools
 Tags: pelican,python,github
 Slug: pelican-blog
@@ -70,6 +70,8 @@ Github为每一个用户分配了一个二级域名username.github.io，用户�
     pip install markdown
     pip install ghp-import 
 
+**注意：**ghp-import在python2下工作正常，但在python3x下不能工作
+
 ###搭建骨架
     mkdir blog
     cd blog
@@ -88,10 +90,11 @@ Github为每一个用户分配了一个二级域名username.github.io，用户�
     ├── pelicanconf.py       # 主配置文件
     └── publishconf.py       # 主发布文件，可删除
 
-进入output把自己刚刚建好的username.github.io版本库clone下来：
+把自己刚刚建好的username.github.io版本库clone下来：
     
-    cd output
-    git clone git@github.com:username/username.github.io.git
+    git init
+    git remote add origin git@github.com:username/username.github.io.git
+    git pull origin
     
 ###开始写博文
 在content目录下用Markdown语法来写一篇文章，最好选择专业的Markdown编辑器，喜欢哪一种请Google。
@@ -101,16 +104,8 @@ Github为每一个用户分配了一个二级域名username.github.io，用户�
     make html
     make serve
 
-若要一键上传到Github，需要修改Makefile两处地方：
+若要一键上传到Github，执行 `make github` 就可以一键部署：
     
-    publish:
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
-    
-    github: publish
-	cd OUTPUTDIR ; git add . ;  git commit -am 'your comments' ; git push
-
-以后写完文章执行make github就可以一键部署了。
-
 
 
 ###添翼
@@ -121,15 +116,15 @@ Github为每一个用户分配了一个二级域名username.github.io，用户�
 我觉得使用云相册比本地图片要方便的多，我使用[Picasa](https://picasaweb.google.com?noredirect=1)来维护blog的所有图片。[微博相册](http://photo.163.com/)也是一个不错的选择。
 
 ###挑选主题
-安装主题，比如bootstrap2：
+安装主题，比如 pelican-bootstrap3：
 
     git clone https://github.com/getpelican/pelican-themes.git
     cd pelican-themes
-    pelican-themes -i bootstrap2
+    pelican-themes -i  pelican-bootstrap3
 
 选择主题，在pelicanconf.py中添加
     
-    THEME = 'bootstrap2'
+    THEME = ' pelican-bootstrap3'
 
 ###安装第三方评论系统
 在[Disqus](https://disqus.com/admin/signup)上申请一个站点，记牢Shortname。
