@@ -1,12 +1,12 @@
-Date: 2012-08-17
-Title: Geek 写作
+Title: 我的博客正式在 GitHub 安家
 Category:Tools
 Tags: pelican,python,github
 Slug: pelican-blog
 Authors:Shan
+Date: 2014-08-17
 
 
-##醒悟
+###醒悟
 * * *
 ###Geek是什么
 Geek更多的是一种精神，一种态度，一种对技术的理解与信念。他们无法忍受丑陋的代码，拙劣的技术。他们思路开阔，技术娴熟，他们不甘平庸，追求完美。他们不会囿于常识，他们敢于突破。在常人眼中，他们不走寻常路，享受各种非主流的技术。但在他们自己眼中，这些又是那么得自然与优美。他们用自己的行为诠释着自己对于技术的理解，用那份固执传达着自己的信念。
@@ -14,13 +14,13 @@ Geek更多的是一种精神，一种态度，一种对技术的理解与信念�
 他们掌握并热爱着技术，叛逆、执着，崇尚自由。
 
 ###为什么不选择CSDN、Wordpress、Jekyll等技术
-我在CSDN上发表博文被和谐了一次，就不会允许这种事发生第二次。
+CSDN上发表博文虽然方便，但没有归属感，自己的博客还是应该自己做主。
 
 Wordpress上手容易、功能强大、插件丰富。但是在我看来，这些优点同时也是它的缺点：太笨重、太无脑、不够酷、无用功能太多、可定制的粒度不够小。我更喜欢简洁快速粗暴的博客系统。
 
 Jekyll非常棒，可惜它基于Ruby。对于Python爱好者而言，基于Python的Pelican显然更加可口。
 
-##探寻
+###探寻
 * * *
 我在搭建这个博客的过程中学到了很多很多有意思的技术。
 
@@ -51,7 +51,7 @@ Jekyll非常棒，可惜它基于Ruby。对于Python爱好者而言，基于Pyth
 
 若对任何一个技术名词有疑问，请翻墙[Google](https://www.google.com/ncr) it.
 
-##初见
+###初见
 * * *
 开始动手。
 ###Github入门指南
@@ -65,9 +65,10 @@ Github为每一个用户分配了一个二级域名username.github.io，用户�
 * 点击Setting，选择一个自己喜欢的模板，最后点击发布public按钮。
 * 耐心等待一段时间（不超过10分钟），登陆http://username.github.io，会发现自己的个人博客已经生成。
 
-###安装Pelican和Markdown
+###安装Pelican、Markdown、ghp-import 
     pip install pelican
     pip install markdown
+    pip install ghp-import 
 
 ###搭建骨架
     mkdir blog
@@ -95,11 +96,6 @@ Github为每一个用户分配了一个二级域名username.github.io，用户�
 ###开始写博文
 在content目录下用Markdown语法来写一篇文章，最好选择专业的Markdown编辑器，喜欢哪一种请Google。
 
-用Markdown写博文截图如下：
-![1](https://lh5.googleusercontent.com/-edzDa6ch3Jk/Ug5oATNTjsI/AAAAAAAAAKs/WIqU7KziyOA/w958-h599-no/%25E5%25B1%258F%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2013-08-17+%25E4%25B8%258A%25E5%258D%25881.57.09.png)
-
-左半边是正在用markdown写的博文，右边是即时预览效果。
-
 写完后，执行以下命令，即可在本机<http://127.0.0.1:8000>看到效果。
 
     make html
@@ -115,7 +111,9 @@ Github为每一个用户分配了一个二级域名username.github.io，用户�
 
 以后写完文章执行make github就可以一键部署了。
 
-##添翼
+
+
+###添翼
 * * *
 我们已经能成功地用markdown写出博文并部署到github了，但这远远不够。
 
@@ -187,17 +185,13 @@ Google Analytics极其强悍，截图说明一切：
 * 在[Dnspod](https://www.dnspod.cn)上添加新域名，并申请一条A记录指向Github Pages的ip:207.97.227.245；
 * 在Pelican主目录新建CNAME文件，添上刚刚申请的域名，如我的www.lizherui.com
 
-##登峰
+###登峰
 * * *
-最后，如果感觉还不够味儿，可以参考Pelican官方文档和这个博客的完整源码。
+最后，如果感觉还不够味儿，可以参考Pelican官方文档、研究源代码和设计自己的博客主题。
 
-Pelican : <http://docs.getpelican.com/en/3.2>
+Pelican : <http://docs.getpelican.com/en/3.4>
 
-Source Code : <https://github.com/lizherui/lizherui.github.io> 
-
-Have fun!
-
-###修改 makefile
+###makefile 进阶
 熟悉几个参数：
 
 * make html 这个是生成你的静态博客站点，你可以在本地预览你的静态博客。它使用 pelicanconf.py 配置文件来生成站点。

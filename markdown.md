@@ -1,4 +1,4 @@
-﻿Title: Markdown 语法说明 (简体中文版)
+﻿Title: 【网摘】Markdown 语法说明 (简体中文版)
 Date: 2014-03-07 10:30
 Modified: 2014-03-07 10:30
 Category: Tools
@@ -28,7 +28,7 @@ Authors: Shan
     *   [自动链接](#autolink)
 *   [感谢](#acknowledgement)
 
-**注意：**这份文档是用 Markdown 写的，你可以看看附件中的原始文档 。
+**注意：**这份文档来自网络，是我目前找到的比较好的关于Markdown 语法的文档。这份文档同时也是用 Markdown 写的，你可以看看附件中的原始文档 。
 
 
 * * *

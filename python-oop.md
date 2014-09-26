@@ -1,3 +1,10 @@
+Title: OOP 学习笔记
+Category: Python 
+Tags: OOP,Python
+Slug: python-oo-dev
+Authors: Shan
+Date: 2014-09-24
+Modified: 2014-09-25
 
 ## 为何使用类：
 

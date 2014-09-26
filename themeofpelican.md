@@ -1,4 +1,4 @@
-Title: How to create themes for Pelican
+Title: 设计你自己的 Pelican 主题
 Date: 2014-03-07 10:30
 Modified: 2014-03-07 10:30
 Category: Tools
@@ -7,7 +7,7 @@ Slug: create-themes-for-Pelican
 Authors: Shan
 
 
-pelican使用jinja2模板引擎来提供博客主题的渲染和输出html，jinja2 的语法很简单。如果你想创建自己的主题模板，先从简单的默认主题获取灵感吧。
+pelican 使用 jinja2 模板引擎来提供博客主题的渲染和输出 html，jinja2 的语法很简单。如果你想创建自己的主题模板，先从简单的默认主题获取灵感吧。
 
 ##项目结构
 一个主题项目必须包括下面的目录结构：
