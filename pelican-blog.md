@@ -113,7 +113,14 @@ Github为每一个用户分配了一个二级域名username.github.io，用户�
 我们已经能成功地用markdown写出博文并部署到github了，但这远远不够。
 
 ###管理图片
-我觉得使用云相册比本地图片要方便的多，我使用[Picasa](https://picasaweb.google.com?noredirect=1)来维护blog的所有图片。[微博相册](http://photo.163.com/)也是一个不错的选择。
+我觉得使用云相册比本地图片要方便的多，我使用[Picasa](https://picasaweb.google.com?noredirect=1)来维护blog的所有图片。[微相册](http://photo.weibo.com/)也是一个不错的选择。
+
+微相册是新浪微博的相册
+![toux](http://ww2.sinaimg.cn/mw690/61625676gw1ekhjtdky2fj20qe11bqaf.jpg)
+
+
+Picasa网络相册是G+的相册
+![picasa](https://lh3.googleusercontent.com/-r7Syau9qbdM/U0Sbu0pjKNI/AAAAAAAAAz8/Vw5pyoue-10/s2048/IMG_20140409_085948.jpg)
 
 ###挑选主题
 安装主题，比如 pelican-bootstrap3：
