@@ -1,5 +1,10 @@
-为手机和平板安装 Ubuntu Touch
-===
+Title:为手机和平板安装 Ubuntu Touch 
+Category: Tools
+Tags: Ubuntu,Linux
+Slug: ubuntu-touch-dev
+Authors: Shan
+Date: 2014-09-24
+Modified: 2014-09-28
 
 
 ## 支持的设备
