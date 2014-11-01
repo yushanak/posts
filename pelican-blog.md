@@ -77,7 +77,7 @@ Github为每一个用户分配了一个二级域名username.github.io，用户�
     cd blog
     pelican-quickstart
 
-根据提示一步步输入相应的配置项，不知道如何设置的接受默认即可，后续可以通过编辑pelicanconf.py文件更改配置)
+根据提示一步步输入相应的配置项，不知道如何设置的接受默认即可，后续可以通过编辑pelicanconf.py文件更改配置。
 
 以下是生成的目录结构：
     
@@ -113,7 +113,7 @@ Github为每一个用户分配了一个二级域名username.github.io，用户�
 我们已经能成功地用markdown写出博文并部署到github了，但这远远不够。
 
 ###管理图片
-我觉得使用云相册比本地图片要方便的多，我使用[Picasa](https://picasaweb.google.com?noredirect=1)来维护blog的所有图片。[微相册](http://photo.weibo.com/)也是一个不错的选择。
+要维护blog的所有图片，我觉得使用云相册比本地图片要方便的多：可以选择的方案[Picasa](https://picasaweb.google.com?noredirect=1)和[微相册](http://photo.weibo.com/)，主要是云相册要能够提供外链服务。
 
 微相册是新浪微博的相册
 ![toux](http://ww2.sinaimg.cn/mw690/61625676gw1ekhjtdky2fj20qe11bqaf.jpg)
@@ -139,7 +139,11 @@ Picasa网络相册是G+的相册
     
     DISQUS_SITENAME = Shortname
 
- 
+ 国内的多说
+
+###分享
+国内的[jiathis](http://jiathis.com/)和国外的[addthis](http://addthis.com/)
+
 ###添加Google Analytics
 去[Google Analytics](http://www.google.com/analytics)申请账号，记下跟踪ID。
 在pelicanconf.py添加
@@ -185,7 +189,7 @@ Google Analytics极其强悍，截图说明一切：
 ###申请独立域名
 * 在[Godaddy](https://www.godaddy.com)上用支付宝花购买为期一年的顶级域名，并去修改Nameservers为这两个地址：f1g1ns1.dnspod.net、f1g1ns2.dnspod.net。
 * 在[Dnspod](https://www.dnspod.cn)上添加新域名，并申请一条A记录指向Github Pages的ip:207.97.227.245；
-* 在Pelican主目录新建CNAME文件，添上刚刚申请的域名，如我的www.lizherui.com
+* 在Pelican主目录新建CNAME文件，添上刚刚申请的域名，如www.xxx.com
 
 ###登峰
 * * *
