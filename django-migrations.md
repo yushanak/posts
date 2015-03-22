@@ -1,5 +1,5 @@
+# Django1.7 新增 Migrations 功能
 Date: 2014-09-03
-Title: Django1.7 新增 Migrations 功能
 Category: Python 
 Tags: Django,Python
 Slug: django-migrantions

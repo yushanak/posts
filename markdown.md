@@ -1,12 +1,4 @@
-﻿Title: 【网摘】Markdown 语法说明 (简体中文版)
-Date: 2014-03-07 10:30
-Modified: 2014-03-07 10:30
-Category: Tools
-Tags: Markdown
-Slug: markdown-syntax
-Authors: Shan
-
-
+﻿# Markdown 语法说明
 *   [概述](#overview)
     *   [哲学](#philosophy)
     *   [行内 HTML](#html)
@@ -708,3 +700,10 @@ Markdown 支持在下面这些符号前面加上反斜杠来帮助插入普通�
 [汉字标准格式・CSS Reset]:http://ethantw.net/projects/han/
 [WM]:http://kidwm.net/
 
+Title: 【网摘】Markdown 语法说明 (简体中文版)
+Date: 2014-03-07 10:30
+Modified: 2014-03-07 10:30
+Category: Tools
+Tags: Markdown
+Slug: markdown-syntax
+Authors: Shan

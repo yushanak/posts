@@ -1,11 +1,4 @@
-Title: 博客正式在 GitHub 安家
-Category:Tools
-Tags: pelican,python,github
-Slug: pelican-blog
-Authors:Shan
-Date: 2014-08-17
-
-
+# 在 Github 上写博客
 ###醒悟
 * * *
 ###Geek是什么
@@ -205,3 +198,12 @@ Pelican : <http://docs.getpelican.com/en/3.4>
 * make serve 建立一个开发服务器提供本地的预览，在windows环境使用 Python3X 的，要注意makefile文件开头的 PY?=python3 的设置，将它改过来：PY?=python 否则会报错。因为windows环境没有 python3 这个命令。
 * [ghp-import](https://github.com/davisp/ghp-import) 工具：使用 pip 安装。Pelican默认使用这个工具，它可以帮助你简化更新 GitHub Page。
 * make regenerate 它可以自动实时更新你的文章输出。使用时，它在后台监控你的 input 文件夹，你修改完并文章保存后，它自动重新生成你的博客到输出目录。这样你就不需要每次改完文章后再去手动输入命令生成。
+
+
+Title: 博客正式在 GitHub 安家
+Category:Tools
+Tags: pelican,python,github
+Slug: pelican-blog
+Authors:Shan
+Date: 2014-08-17
+
