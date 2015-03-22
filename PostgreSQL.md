@@ -1,11 +1,4 @@
-Title: Win7 安装 PostgreSQL Postgis 记录
-Date: 2014-03-07 22:30
-Modified: 2014-03-08 22:30
-Category: Database
-Tags: postgresql
-Slug: postgresql-windows
-Authors: Shan
- 
+# Win7 安装 PostgreSQL Postgis 记录
 **软件说明：** postgresql-9.3.3-1-windows-binaries 自解压版本，没有选择 exe 安装版本；操作系统 win7 64位，postgis-pg93-setup-2.1.exe；
 
 ----
@@ -55,3 +48,12 @@ Authors: Shan
 第二种方式为使用pgAdmin修改，具体就不演示了，用pgAdmin连接到服务器，可以直接修改密码；
 9. 安装postgis：
 双击安装文件，选择postgre的安装目录，这个地方我搞错了，一开始以为是postgis的安装目录，其实不是，是选择postgre的目录，也就是你解压的目录才对，填写超级用户名称和密码，一路next下去，安装成功。
+
+
+Title: Win7 安装 PostgreSQL Postgis 记录
+Date: 2014-03-07 22:30
+Modified: 2014-03-08 22:30
+Category: Database
+Tags: postgresql
+Slug: postgresql-windows
+Authors: Shan
